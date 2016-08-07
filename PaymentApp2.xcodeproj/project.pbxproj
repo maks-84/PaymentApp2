@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DFFF0881D571ABE00122A78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF0871D571ABE00122A78 /* main.m */; };
+		2DFFF08B1D571ABE00122A78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF08A1D571ABE00122A78 /* AppDelegate.m */; };
+		2DFFF08E1D571ABE00122A78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF08D1D571ABE00122A78 /* ViewController.m */; };
+		2DFFF0911D571ABE00122A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFFF08F1D571ABE00122A78 /* Main.storyboard */; };
+		2DFFF0941D571ABE00122A78 /* PaymentApp2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF0921D571ABE00122A78 /* PaymentApp2.xcdatamodeld */; };
+		2DFFF0961D571ABE00122A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DFFF0951D571ABE00122A78 /* Assets.xcassets */; };
+		2DFFF0991D571ABE00122A78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFFF0971D571ABE00122A78 /* LaunchScreen.storyboard */; };
+		2DFFF0AC1D571D0000122A78 /* TMMonth+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF0A11D571D0000122A78 /* TMMonth+CoreDataProperties.m */; };
+		2DFFF0AD1D571D0000122A78 /* TMMonth.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF0A31D571D0000122A78 /* TMMonth.m */; };
+		2DFFF0AE1D571D0000122A78 /* TMCoordinator+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF0A51D571D0000122A78 /* TMCoordinator+CoreDataProperties.m */; };
+		2DFFF0AF1D571D0000122A78 /* TMCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF0A71D571D0000122A78 /* TMCoordinator.m */; };
+		2DFFF0B01D571D0000122A78 /* TMNumber+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF0A91D571D0000122A78 /* TMNumber+CoreDataProperties.m */; };
+		2DFFF0B11D571D0000122A78 /* TMNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF0AB1D571D0000122A78 /* TMNumber.m */; };
+		2DFFF0B51D571D3100122A78 /* TMDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF0B41D571D3100122A78 /* TMDataManager.m */; };
+		2DFFF0B91D5723C800122A78 /* TMMonthTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF0B81D5723C800122A78 /* TMMonthTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2DFFF0831D571ABE00122A78 /* PaymentApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DFFF0871D571ABE00122A78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DFFF0891D571ABE00122A78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DFFF08A1D571ABE00122A78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2DFFF08C1D571ABE00122A78 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2DFFF08D1D571ABE00122A78 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2DFFF0901D571ABE00122A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DFFF0931D571ABE00122A78 /* PaymentApp2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PaymentApp2.xcdatamodel; sourceTree = "<group>"; };
+		2DFFF0951D571ABE00122A78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DFFF0981D571ABE00122A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DFFF09A1D571ABE00122A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DFFF0A01D571D0000122A78 /* TMMonth+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TMMonth+CoreDataProperties.h"; sourceTree = "<group>"; };
+		2DFFF0A11D571D0000122A78 /* TMMonth+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TMMonth+CoreDataProperties.m"; sourceTree = "<group>"; };
+		2DFFF0A21D571D0000122A78 /* TMMonth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMonth.h; sourceTree = "<group>"; };
+		2DFFF0A31D571D0000122A78 /* TMMonth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMonth.m; sourceTree = "<group>"; };
+		2DFFF0A41D571D0000122A78 /* TMCoordinator+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TMCoordinator+CoreDataProperties.h"; sourceTree = "<group>"; };
+		2DFFF0A51D571D0000122A78 /* TMCoordinator+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TMCoordinator+CoreDataProperties.m"; sourceTree = "<group>"; };
+		2DFFF0A61D571D0000122A78 /* TMCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCoordinator.h; sourceTree = "<group>"; };
+		2DFFF0A71D571D0000122A78 /* TMCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCoordinator.m; sourceTree = "<group>"; };
+		2DFFF0A81D571D0000122A78 /* TMNumber+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TMNumber+CoreDataProperties.h"; sourceTree = "<group>"; };
+		2DFFF0A91D571D0000122A78 /* TMNumber+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TMNumber+CoreDataProperties.m"; sourceTree = "<group>"; };
+		2DFFF0AA1D571D0000122A78 /* TMNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMNumber.h; sourceTree = "<group>"; };
+		2DFFF0AB1D571D0000122A78 /* TMNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMNumber.m; sourceTree = "<group>"; };
+		2DFFF0B31D571D3100122A78 /* TMDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDataManager.h; sourceTree = "<group>"; };
+		2DFFF0B41D571D3100122A78 /* TMDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDataManager.m; sourceTree = "<group>"; };
+		2DFFF0B71D5723C800122A78 /* TMMonthTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMonthTableViewController.h; sourceTree = "<group>"; };
+		2DFFF0B81D5723C800122A78 /* TMMonthTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMonthTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DFFF0801D571ABE00122A78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DFFF07A1D571ABD00122A78 = {
+			isa = PBXGroup;
+			children = (
+				2DFFF0851D571ABE00122A78 /* PaymentApp2 */,
+				2DFFF0841D571ABE00122A78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DFFF0841D571ABE00122A78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DFFF0831D571ABE00122A78 /* PaymentApp2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DFFF0851D571ABE00122A78 /* PaymentApp2 */ = {
+			isa = PBXGroup;
+			children = (
+				2DFFF0891D571ABE00122A78 /* AppDelegate.h */,
+				2DFFF08A1D571ABE00122A78 /* AppDelegate.m */,
+				2DFFF08F1D571ABE00122A78 /* Main.storyboard */,
+				2DFFF0951D571ABE00122A78 /* Assets.xcassets */,
+				2DFFF0971D571ABE00122A78 /* LaunchScreen.storyboard */,
+				2DFFF09A1D571ABE00122A78 /* Info.plist */,
+				2DFFF0921D571ABE00122A78 /* PaymentApp2.xcdatamodeld */,
+				2DFFF0B61D571EFD00122A78 /* ViewControllers */,
+				2DFFF0B21D571D0500122A78 /* CoreData Stack */,
+				2DFFF0861D571ABE00122A78 /* Supporting Files */,
+			);
+			path = PaymentApp2;
+			sourceTree = "<group>";
+		};
+		2DFFF0861D571ABE00122A78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DFFF0871D571ABE00122A78 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DFFF0B21D571D0500122A78 /* CoreData Stack */ = {
+			isa = PBXGroup;
+			children = (
+				2DFFF0A01D571D0000122A78 /* TMMonth+CoreDataProperties.h */,
+				2DFFF0A11D571D0000122A78 /* TMMonth+CoreDataProperties.m */,
+				2DFFF0A21D571D0000122A78 /* TMMonth.h */,
+				2DFFF0A31D571D0000122A78 /* TMMonth.m */,
+				2DFFF0A41D571D0000122A78 /* TMCoordinator+CoreDataProperties.h */,
+				2DFFF0A51D571D0000122A78 /* TMCoordinator+CoreDataProperties.m */,
+				2DFFF0A61D571D0000122A78 /* TMCoordinator.h */,
+				2DFFF0A71D571D0000122A78 /* TMCoordinator.m */,
+				2DFFF0A81D571D0000122A78 /* TMNumber+CoreDataProperties.h */,
+				2DFFF0A91D571D0000122A78 /* TMNumber+CoreDataProperties.m */,
+				2DFFF0AA1D571D0000122A78 /* TMNumber.h */,
+				2DFFF0AB1D571D0000122A78 /* TMNumber.m */,
+				2DFFF0B31D571D3100122A78 /* TMDataManager.h */,
+				2DFFF0B41D571D3100122A78 /* TMDataManager.m */,
+			);
+			name = "CoreData Stack";
+			sourceTree = "<group>";
+		};
+		2DFFF0B61D571EFD00122A78 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2DFFF08C1D571ABE00122A78 /* ViewController.h */,
+				2DFFF08D1D571ABE00122A78 /* ViewController.m */,
+				2DFFF0B71D5723C800122A78 /* TMMonthTableViewController.h */,
+				2DFFF0B81D5723C800122A78 /* TMMonthTableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DFFF0821D571ABE00122A78 /* PaymentApp2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DFFF09D1D571ABE00122A78 /* Build configuration list for PBXNativeTarget "PaymentApp2" */;
+			buildPhases = (
+				2DFFF07F1D571ABE00122A78 /* Sources */,
+				2DFFF0801D571ABE00122A78 /* Frameworks */,
+				2DFFF0811D571ABE00122A78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaymentApp2;
+			productName = PaymentApp2;
+			productReference = 2DFFF0831D571ABE00122A78 /* PaymentApp2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DFFF07B1D571ABD00122A78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Mac;
+				TargetAttributes = {
+					2DFFF0821D571ABE00122A78 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5CVB6MAB63;
+					};
+				};
+			};
+			buildConfigurationList = 2DFFF07E1D571ABD00122A78 /* Build configuration list for PBXProject "PaymentApp2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DFFF07A1D571ABD00122A78;
+			productRefGroup = 2DFFF0841D571ABE00122A78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DFFF0821D571ABE00122A78 /* PaymentApp2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DFFF0811D571ABE00122A78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFFF0991D571ABE00122A78 /* LaunchScreen.storyboard in Resources */,
+				2DFFF0961D571ABE00122A78 /* Assets.xcassets in Resources */,
+				2DFFF0911D571ABE00122A78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DFFF07F1D571ABE00122A78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFFF08E1D571ABE00122A78 /* ViewController.m in Sources */,
+				2DFFF0B51D571D3100122A78 /* TMDataManager.m in Sources */,
+				2DFFF0AD1D571D0000122A78 /* TMMonth.m in Sources */,
+				2DFFF0AC1D571D0000122A78 /* TMMonth+CoreDataProperties.m in Sources */,
+				2DFFF0AE1D571D0000122A78 /* TMCoordinator+CoreDataProperties.m in Sources */,
+				2DFFF0941D571ABE00122A78 /* PaymentApp2.xcdatamodeld in Sources */,
+				2DFFF08B1D571ABE00122A78 /* AppDelegate.m in Sources */,
+				2DFFF0881D571ABE00122A78 /* main.m in Sources */,
+				2DFFF0B11D571D0000122A78 /* TMNumber.m in Sources */,
+				2DFFF0B91D5723C800122A78 /* TMMonthTableViewController.m in Sources */,
+				2DFFF0B01D571D0000122A78 /* TMNumber+CoreDataProperties.m in Sources */,
+				2DFFF0AF1D571D0000122A78 /* TMCoordinator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2DFFF08F1D571ABE00122A78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DFFF0901D571ABE00122A78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2DFFF0971D571ABE00122A78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DFFF0981D571ABE00122A78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DFFF09B1D571ABE00122A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2DFFF09C1D571ABE00122A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DFFF09E1D571ABE00122A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PaymentApp2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TM.PaymentApp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2DFFF09F1D571ABE00122A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PaymentApp2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TM.PaymentApp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DFFF07E1D571ABD00122A78 /* Build configuration list for PBXProject "PaymentApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DFFF09B1D571ABE00122A78 /* Debug */,
+				2DFFF09C1D571ABE00122A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DFFF09D1D571ABE00122A78 /* Build configuration list for PBXNativeTarget "PaymentApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DFFF09E1D571ABE00122A78 /* Debug */,
+				2DFFF09F1D571ABE00122A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2DFFF0921D571ABE00122A78 /* PaymentApp2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2DFFF0931D571ABE00122A78 /* PaymentApp2.xcdatamodel */,
+			);
+			currentVersion = 2DFFF0931D571ABE00122A78 /* PaymentApp2.xcdatamodel */;
+			path = PaymentApp2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2DFFF07B1D571ABD00122A78 /* Project object */;
+}

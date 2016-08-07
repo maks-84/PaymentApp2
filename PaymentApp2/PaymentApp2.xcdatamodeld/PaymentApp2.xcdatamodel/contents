@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="TMCoordinator" representedClassName="TMCoordinator" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paymentAccepted" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="numbers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TMNumber" inverseName="coordinator" inverseEntity="TMNumber" syncable="YES"/>
+        <relationship name="paymentMonth" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TMMonth" inverseName="coordinators" inverseEntity="TMMonth" syncable="YES"/>
+    </entity>
+    <entity name="TMMonth" representedClassName="TMMonth" syncable="YES">
+        <attribute name="paymentMonth" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="coordinators" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TMCoordinator" inverseName="paymentMonth" inverseEntity="TMCoordinator" syncable="YES"/>
+    </entity>
+    <entity name="TMNumber" representedClassName="TMNumber" syncable="YES">
+        <attribute name="phoneNumber" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sum" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="coordinator" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TMCoordinator" inverseName="numbers" inverseEntity="TMCoordinator" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TMMonth" positionX="-90" positionY="-208" width="128" height="73"/>
+        <element name="TMCoordinator" positionX="97" positionY="-171" width="128" height="118"/>
+        <element name="TMNumber" positionX="295" positionY="-88" width="128" height="88"/>
+    </elements>
+</model>
