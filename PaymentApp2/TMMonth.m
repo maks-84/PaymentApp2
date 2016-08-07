@@ -11,7 +11,6 @@
 @implementation TMMonth
 
 + (void) createNewMonth {
-  //  for (int i = 0 ; i < 10; i++) {
 
     NSManagedObjectContext *context = [[TMDataManager sharedManager] managedObjectContext];
     NSInteger monthCountInStore = [[TMDataManager sharedManager] getMonthCountInPersistentStore];
@@ -26,8 +25,9 @@
     TMMonth *newMonth = [NSEntityDescription insertNewObjectForEntityForName:@"TMMonth" inManagedObjectContext:context];
     newMonth.paymentMonth = newMonthNamed;
     [context save:nil];
-  //  }
 
 }
+
+
 
 @end

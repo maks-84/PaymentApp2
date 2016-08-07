@@ -49,6 +49,7 @@
 
 #pragma mark - Table view data source
 
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.monthInPersistentStore count];
 }
@@ -59,10 +60,25 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     }
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     TMMonth *month = [self.monthInPersistentStore objectAtIndex:indexPath.row];
     cell.textLabel.text = month.paymentMonth;
-    cell.detailTextLabel.text = @"detail text";
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%li coordinators", [month.coordinators count]];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == [[TMDataManager sharedManager] getMonthCountInPersistentStore]-1)
+    return UITableViewCellEditingStyleDelete;
+    else return UITableViewCellEditingStyleNone;
 }
 
 @end
