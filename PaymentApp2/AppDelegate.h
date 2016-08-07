@@ -10,6 +10,7 @@
 #import <CoreData/CoreData.h>
 #import "TMDataManager.h"
 #import "TMMonthTableViewController.h"
+#import "TMMonth.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

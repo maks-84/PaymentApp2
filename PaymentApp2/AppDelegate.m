@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [TMMonth createNewMonth];
+    
     TMMonthTableViewController *tableViewController= [[TMMonthTableViewController alloc] init];
     
     UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:tableViewController];

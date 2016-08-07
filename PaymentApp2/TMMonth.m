@@ -10,6 +10,15 @@
 
 @implementation TMMonth
 
-// Insert code here to add functionality to your managed object subclass
++ (void) createNewMonth {
+    NSManagedObjectContext *context = [[TMDataManager sharedManager] managedObjectContext];
+    
+    for (int i = 0; i <10;i++) {
+    
+    TMMonth *newMonth = [NSEntityDescription insertNewObjectForEntityForName:@"TMMonth" inManagedObjectContext:context];
+    newMonth.paymentMonth = @"hhhhh";
+    [context save:nil];
+    }
+}
 
 @end

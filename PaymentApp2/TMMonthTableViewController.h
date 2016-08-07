@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TMDataManager.h"
+#import "TMMonth.h"
 
 @interface TMMonthTableViewController : UITableViewController
 

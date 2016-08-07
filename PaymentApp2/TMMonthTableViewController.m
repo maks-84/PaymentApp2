@@ -50,7 +50,8 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:@"cell"];
     }
-    cell.textLabel.text = [[self.monthInPersistentStore objectAtIndex:indexPath.row] name];
+    TMMonth *month = [self.monthInPersistentStore objectAtIndex:indexPath.row];
+    cell.textLabel.text = month.paymentMonth;
     cell.detailTextLabel.text = @"detail text";
     return cell;
 }

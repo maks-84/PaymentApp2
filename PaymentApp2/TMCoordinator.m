@@ -18,7 +18,7 @@
     coordinator.name = name;
     coordinator.phoneNumber = phone;
     coordinator.paymentAccepted = [NSNumber numberWithBool:NO];
-    [[[TMDataManager sharedManager] managedObjectContext] save:nil];
+    [context save:nil];
 }
 
 @end
