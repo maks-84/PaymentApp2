@@ -28,6 +28,20 @@
 
 }
 
++ (void) deleteLastMonthFromPercistentStore {
+    
+    NSManagedObjectContext *context = [[TMDataManager sharedManager] managedObjectContext];
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *description = [NSEntityDescription entityForName:@"TMMonth" inManagedObjectContext:context];
+    [request setEntity:description];
+    NSArray *result = [context executeFetchRequest:request error:nil];
+    
+    [context deleteObject:[result lastObject]];
+    [context save:nil];
+    //NSLog(@"%@", [[result lastObject] paymentMonth]);
+}
+
 
 
 @end

@@ -73,9 +73,15 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
+   // [self.mainTable beginUpdates];
+    [TMMonth deleteLastMonthFromPercistentStore];
+   // [self.mainTable endUpdates];
+    [self.mainTable reloadData];
+    
 }
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"1");
     if (indexPath.row == [[TMDataManager sharedManager] getMonthCountInPersistentStore]-1)
     return UITableViewCellEditingStyleDelete;
     else return UITableViewCellEditingStyleNone;
