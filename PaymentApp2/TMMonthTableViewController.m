@@ -27,6 +27,15 @@
     
     self.navigationItem.title = @"Month";
     
+    UIBarButtonItem *addMonthButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addMonthAction:)];
+    self.navigationItem.rightBarButtonItem = addMonthButton;
+}
+
+-(void) addMonthAction: (UIBarButtonItem *) barButton {
+
+    [TMMonth createNewMonth];
+    [self.mainTable reloadData];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,7 +57,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:@"cell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     }
     TMMonth *month = [self.monthInPersistentStore objectAtIndex:indexPath.row];
     cell.textLabel.text = month.paymentMonth;
